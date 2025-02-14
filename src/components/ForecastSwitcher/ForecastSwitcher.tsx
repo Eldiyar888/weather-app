@@ -34,7 +34,6 @@ const ForecastSwitcher = () => {
   const toggleActive = (item: IFiveDayForecastItem) => {
     dispatch(setCurrentWeather(item));
     setIsActive(item.forecast.id);
-    console.log(item.forecast.id, "id = ");
   };
 
   useEffect(() => {
@@ -51,7 +50,6 @@ const ForecastSwitcher = () => {
     }
   }, [weatherForecast.data, weatherForecast.status, city]);
 
-  console.log("fiveDayForecast", fiveDayForecast);
 
   const onChange = (value: string) => {
     setSelectedTab(value);

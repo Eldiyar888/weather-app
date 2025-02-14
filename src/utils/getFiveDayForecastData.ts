@@ -11,13 +11,6 @@ export const getFiveDayForecastData = (
     const averageTemp =
       dayData.reduce((sum, item) => sum + item.main.temp, 0) / dayData.length;
 
-    // fiveDayForecast.push({
-    //   id: `${dayData[0].weather[0].id}-${dayData[0].dt_txt}`,
-    //   date: dayData[0].dt_txt,
-    //   temp: averageTemp.toFixed(2),
-    //   icon: dayData[0].weather[0].icon,
-    // });
-
     fiveDayForecast.push({
       forecast: {
         id: `${dayData[0].weather[0].id}-${dayData[0].dt_txt}`,

@@ -8,11 +8,11 @@ export const theme = {
     },
     components: {
       Input: {
-        colorBgContainer: "#24343D", // Тёмный фон
-        colorText: "#FFFFFF", // Белый текст
-        colorTextPlaceholder: "#FFFFFF", // Светлый текст для плейсхолдера
-        borderRadius: 12, // Скруглённые углы
-        controlHeight: 50, // Высота Input
+        colorBgContainer: "#24343D",
+        colorText: "#FFFFFF", 
+        colorTextPlaceholder: "#FFFFFF", 
+        borderRadius: 12, 
+        controlHeight: 50,
       },
       Button: {
         colorBorder: "none",

@@ -65,3 +65,9 @@
 .center {
     align-items: center;
 }
+
+@media (max-width: 425px) {
+    .forecastSwitcher {
+        flex: 1;
+    }
+}

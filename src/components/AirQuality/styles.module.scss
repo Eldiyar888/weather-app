@@ -5,11 +5,16 @@
     height: calc(100% - 20px);
     display: flex;
     justify-content: center;
-    // align-items: center;
     flex-wrap: wrap;
     gap: 10px;
 }
 
 .center {
     align-items: center;
+}
+
+@media (max-width: 425px) {
+    .wrapper {
+        flex: 1;
+    }
 }

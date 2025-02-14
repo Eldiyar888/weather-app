@@ -34,7 +34,6 @@ const AirQualityIndex: React.FC<AirQualityIndexProps> = ({
       className={`${styles.wrapper} ${styles["fade-motion"]} ${
         fadeIn && styles["fade-motion-enter-active"]
       }`}
-      // style={{ backgroundColor: color }}
     >
       <Row
         gutter={[10, 10]}
