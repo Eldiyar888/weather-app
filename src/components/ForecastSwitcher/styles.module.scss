@@ -1,0 +1,67 @@
+.forecastSwitcher {
+    background-color: #1B262C;
+    padding: 10px;
+    border-radius: 12px;
+    .skeleton {
+        min-height: 200px;
+    }
+    .tabs {
+        display: flex;
+        .tabsWrapper {
+            flex: 1;
+        }
+    }
+    .cardWrapper {
+        flex: 1;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        .card {
+            flex: 1 1 calc((100% - 40px) / 5);     
+            min-height: 150px;
+            max-height: 200px;
+            background-color: #24343D;
+            border-radius: 12px;
+            &.fullWidth {
+                flex: 0 1 100%;     
+            }
+            &.fade-motion {
+                transform: translateX(20px); 
+                transition: transform 0.7s ease !important;
+            }
+              
+            &.fade-motion-enter-active {
+                transform: translateX(0);
+            }
+            .cardRow {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .warm {
+                    color: #FFCC99;
+                }
+                .cold {
+                    color: #B0E0E6;
+                }
+            }
+            &.active {
+                background-color: #0075E0;
+                font-weight: bold;
+                transition: background-color 0.5s ease-in-out, font-weight 0.5s ease-in-out;
+            }
+        }
+    
+    }
+}
+
+.emptyState {
+    display: flex;
+    flex-direction: column;
+    height: 100%;   
+}
+
+.center {
+    align-items: center;
+}

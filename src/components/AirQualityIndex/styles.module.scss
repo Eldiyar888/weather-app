@@ -1,0 +1,25 @@
+.wrapper {
+    width: 100%;
+    // height: calc(100% / 3);
+    background-color: #24343D;
+    border-radius: 12px;
+    &.fade-motion {
+        transform: translateX(20px); 
+        transition: transform 0.7s ease;
+    }
+      
+    &.fade-motion-enter-active {
+        transform: translateX(0);
+    }
+    .content {
+        height: 100%;
+        .text {
+            margin-bottom: 0;
+        }
+    }
+    :global {
+        .ant-card-body {
+            height: 100%;
+        }
+    }
+}

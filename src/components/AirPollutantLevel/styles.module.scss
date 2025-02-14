@@ -1,0 +1,37 @@
+.wrapper {
+    flex: 1 1 calc((100% - 20px) / 3);  
+    // height: calc(100% / 3 - 10px);
+    background-color: #24343D;
+    border-radius: 12px;
+    &.fade-motion {
+        transform: translateX(20px); 
+        transition: transform 0.7s ease;
+    }
+      
+    &.fade-motion-enter-active {
+        transform: translateX(0);
+    }
+    :global {
+        .ant-card-body {
+            height: 100%;
+            padding: 15px;
+        }
+    }
+    .content {
+        height: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        flex: 0 1 calc((100% - 10px) / 2);  
+        // height: calc(100% / 4 - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex: 0 1 calc((100% - 0px) / 1);  
+        // height: calc(100% / 7 - 60px);
+    }
+}

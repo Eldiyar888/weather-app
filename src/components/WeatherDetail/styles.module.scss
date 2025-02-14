@@ -1,0 +1,22 @@
+.wrapper {
+    min-height: 100%;
+    background-color: #24343D;
+    border-radius: 12px;
+    padding: 10px;
+    color: #FFF;
+
+    &.fade-motion {
+        transform: translateY(20px); 
+        transition: transform 0.7s ease;
+    }
+      
+    &.fade-motion-enter-active {
+        transform: translateY(0);
+    }
+    
+    :global {
+        .ant-card-head {
+            border: none;
+        }
+    }
+}

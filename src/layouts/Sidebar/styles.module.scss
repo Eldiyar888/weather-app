@@ -1,0 +1,15 @@
+.wrapper {
+    background-color: #1B262C;
+    .sider {
+        margin: 20px;
+        height: calc(100% - 40px);
+        width: calc(100% - 40px); 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 20px;
+        font-family: "Poiret One", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}

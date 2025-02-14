@@ -1,0 +1,15 @@
+.wrapper {
+    background-color: #1B262C;
+    padding: 10px;
+    border-radius: 12px;
+    height: calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.center {
+    align-items: center;
+}
