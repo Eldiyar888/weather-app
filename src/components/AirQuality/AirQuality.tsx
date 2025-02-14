@@ -4,7 +4,7 @@ import AirPollutantLevel from "../AirPollutantLevel/AirPollutantLevel";
 import AirQualityIndex from "../AirQualityIndex/AirQualityIndex";
 import styles from "./styles.module.scss";
 import { fetchCurrentAirPollution } from "../../store/weatherSlice";
-import { Empty, Skeleton, Typography } from "antd";
+import { Empty, Skeleton } from "antd";
 
 const AirQuality = () => {
   const [fadeIn, setFadeIn] = useState(false);

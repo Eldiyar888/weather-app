@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import WeatherIcon, { WeatherCondition } from "../WeatherIcon/WeatherIcon";
 import { Card, Col, Row, Typography } from "antd";
